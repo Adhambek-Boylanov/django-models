@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title1}} va {{title}} va {{title2}}</title>
+</head>
+<body>
+<h1> Viloyatlar </h1>
+{% for i in vil %}
+<p> {{i.title}}</p> <p> {{i.context}}</p>
+<hr>
+{%endfor%}
+<h1> Tumanlar haqida </h1>
+{% for item in tums %}
+<p> {{item.title}}</p> <p> {{item.context}}</p>
+<hr>
+{%endfor%}
+<h1> Mahallalar haqida </h1>
+{% for it in mah %}
+<p> {{it.title}} </p> <p> {{it.context}}</p>
+<hr>
+{%endfor%}
+</body>
+</html>
+
+
+
+
+
+
